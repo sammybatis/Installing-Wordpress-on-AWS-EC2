@@ -15,9 +15,9 @@ sudo systemctl enable apache2
 
 sudo apt install mysql-server -y
 
-sudo systemctl start mysql.server
+sudo systemctl start mysql.service
 
-sudo systemctl status mysql.server
+sudo systemctl status mysql.service
 
    
 
