@@ -2,6 +2,7 @@
 
 
 #### Installing Aparche Server ####
+
 sudo apt-get update -y
 
 sudo apt install apache2 -y
@@ -75,18 +76,19 @@ sudo rm -rf index.html
 
 cd /etc/apache2/sites-available 
 
-# put in your domain name in place of yourdomainname.com #
-sudo vim yourdomainname.com.conf
+
+### put your domain name in place of yourdomain-name.com ####
+sudo vim yourdomain-name.com.conf
 
 
 
-#### Copy and Paste into yourdomainname.com.conf file ####
-# put in your domain name in place of yourdomainname.com #
+#### Copy and Paste into yourdomain-name.com.conf file ####
+### put your domain name in place of yourdomain-name.com ####
 
 <VirtualHost *:80>
-    ServerAdmin admin@yourdomainname.com
-    ServerName yourdomainname.com
-    ServerAlias www.yourdomainname.com
+    ServerAdmin admin@yourdomain-name.com
+    ServerName yourdomain-name.com
+    ServerAlias www.yourdomain-name.com
     DocumentRoot /var/www/html
     ErrorLog ${APACHE_LOG_DIR}/error.log
     CustomLog ${APACHE_LOG_DIR}/access.log combined
@@ -95,8 +97,8 @@ sudo vim yourdomainname.com.conf
 ### End ####
 
 
-# put in your domain name in place of yourdomainname.com #
-sudo a2ensite yourdomainname.com.conf
+### put in your domain name in place of yourdomain-name.com ####
+sudo a2ensite yourdomain-name.com.conf
 
 sudo a2dissite 000-default.conf
 
