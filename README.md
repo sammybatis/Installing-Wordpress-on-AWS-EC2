@@ -75,15 +75,18 @@ sudo rm -rf index.html
 
 cd /etc/apache2/sites-available 
 
+# put in your domain name in place of yourdomainname.com #
 sudo vim yourdomainname.com.conf
 
 
+
 #### Copy and Paste into yourdomainname.com.conf file ####
+# put in your domain name in place of yourdomainname.com #
 
 <VirtualHost *:80>
-    ServerAdmin admin@example.com
-    ServerName example.com
-    ServerAlias www.example.com
+    ServerAdmin admin@yourdomainname.com
+    ServerName yourdomainname.com
+    ServerAlias www.yourdomainname.com
     DocumentRoot /var/www/html
     ErrorLog ${APACHE_LOG_DIR}/error.log
     CustomLog ${APACHE_LOG_DIR}/access.log combined
@@ -92,6 +95,7 @@ sudo vim yourdomainname.com.conf
 ### End ####
 
 
+# put in your domain name in place of yourdomainname.com #
 sudo a2ensite yourdomainname.com.conf
 
 sudo a2dissite 000-default.conf
