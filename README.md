@@ -37,7 +37,7 @@ CREATE USER 'cloudtechwithsam' IDENTIFIED WITH mysql_native_password BY 'passwor
 
 Create database wordpress;
 
-GRANT all ON wordpress.* TO ‘cloudtechwithsam’;
+GRANT all ON wordpress.* TO 'cloudtechwithsam';
 
 Flush privileges;
 
