@@ -33,6 +33,8 @@ sudo mysql_secure_installation
 
 mysql -u root -p
 
+ALTER USER 'root'@'localhost' IDENTIFIED WITH auth_socket;
+
 CREATE USER 'cloudtechwithsam' IDENTIFIED WITH mysql_native_password BY 'password';
 
 Create database wordpress;
