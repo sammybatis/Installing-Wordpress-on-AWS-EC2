@@ -35,13 +35,15 @@ mysql -u root -p
 
 ALTER USER 'root'@'localhost' IDENTIFIED WITH auth_socket;
 
-CREATE USER ‘username’ IDENTIFIED WITH mysql_native_password BY 'password';
+CREATE USER ‘cloudtechwithsam’ IDENTIFIED WITH mysql_native_password BY 'password';
 
 Create database wordpress;
 
-GRANT all ON wordpress.* TO ‘username’;
+GRANT all ON wordpress.* TO ‘cloudtechwithsam’;
 
 Flush privileges;
+
+exit
 
 
 #### Installing PHP #####
